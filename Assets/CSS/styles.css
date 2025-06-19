@@ -1,0 +1,217 @@
+:root {
+            --main-color: #cc0055;
+            --accent-color: #aef605;
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .site_header{
+            position: sticky;
+            top: 0;
+            padding: 20px 16px;
+            background: rgb(238, 187, 187);
+            color: pink;
+}
+
+        .header_container {
+            display:flex;
+            align-items:center;
+            justify-content: space-around;
+            background-color: var(--main-color);
+            padding-left: 30px;
+            padding-right: 30px;
+            color: #f5dbdb;
+        }
+
+        .nav_bar a {
+            margin-left: 20px;
+            text-decoration:solid;
+            color: #fff;
+            font-weight:bold;
+        }
+
+        .nav_bar a:hover {
+            color: var(--accent-color);
+        }
+
+        .main-section {
+            padding: 40px;
+            text-align: center;
+            background:#f4f4f4;
+        }
+        
+        .about_main{
+            padding: 40px;
+            text-align: center;
+            background:#f4f4f4;
+        }
+        .about_main p::first-letter{
+            color: rgb(25, 9, 252);
+            text-decoration: solid;
+        }
+            
+        .about_container{
+            display:flex;
+            gap:20px;
+            transition:0.3s;
+            flex-wrap:wrap;
+            background-color: #aaa;
+            padding: 10px;
+            
+        }
+        .lessons_container{
+            display:flexbox;
+            gap:20px 10px;
+            justify-content: space-around;
+        }
+        .login_section{
+           
+             padding: 40px;
+            text-align: center;
+            background:pink;
+        }
+        .login_form{
+            margin-left:35%;
+             background-color: #fff;
+            border: 1px solid #820340;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            transition:.3s;
+            max-width: 350px;
+            position: relative;
+        }
+       .email label{
+        padding-left:28px;
+
+       }
+       .email input[type=email]{
+        margin-left:32px
+       }
+        .password{
+            padding-left: 30px;
+        }
+        button{
+            color: white;
+            background-color: blue;
+            padding:2px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: #17787d;
+        }
+        .about_card{
+            background-color: #fff;
+            border:1px solid #820340;
+            padding: 20px;
+            border-radius: 8px;
+            flex:1;
+            transition:.3s;
+            min-width:250px;
+            position: relative;
+        }
+        .about_card:hover{
+            box-shadow: 0 8px 16px 0px rgba(50,50,50,0.4);
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            transition:0.3s;
+            flex-wrap: wrap;
+            background-color: #abc2d2;
+        }
+        .contact_form{
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+        }
+        .contact_form input[type=submit]{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 50%;
+        }
+        .contact_form_section input[type=email],input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */ 
+            border: 1px solid pink;
+            border-radius: 4px; /* Rounded borders */
+            box-sizing:content-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #820340;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            transition:.3s;
+            min-width: 250px;
+            position: relative;
+        }
+        .course-card input[type=submit]{
+            background-color: blue;
+            color:white;
+            border:0;
+            padding:0 20px;
+            font-size: medium;
+            border-radius: 10px;
+            position: absolute;
+            bottom:5px;
+            right:10px;
+        }
+        input[type=submit]:hover {
+         background-color: #45a049;
+        }
+        .course-card:hover{
+            box-shadow: 0 8px 16px 0px rgba(50,50,50,0.4);
+        }
+
+        .course-card::before {
+            content: "📘";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--main-color);
+            color: #fff;
+        }
+        @media (max-width:768px){
+            .header_container{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav_bar{
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+         @media (max-width: 480px){
+             .nav-bar a {
+                font-size: 0.9rem;
+            }
+         }
