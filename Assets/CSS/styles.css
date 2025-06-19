@@ -71,11 +71,7 @@
             padding: 10px;
             
         }
-        .lessons_container{
-            display:flexbox;
-            gap:20px 10px;
-            justify-content: space-around;
-        }
+       
         .login_section{
            
              padding: 40px;
@@ -148,16 +144,18 @@
             margin-left: 50%;
         }
         .contact_form_section input[type=email],input[type=text], select, textarea {
-            width: 100%; /* Full width */
-            padding: 12px; /* Some padding */ 
+            width: 35%; 
+            padding: 12px; 
             border: 1px solid pink;
-            border-radius: 4px; /* Rounded borders */
-            box-sizing:content-box; /* Make sure that padding and width stays in place */
-            margin-top: 6px; /* Add a top margin */
-            margin-bottom: 16px; /* Bottom margin */
-            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            border-radius: 4px; 
+            box-sizing:content-box;
+            margin-top: 6px; 
+            margin-bottom: 16px; 
+            resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-
+        .contact_form textarea{
+                    width=60%;
+        }
         .course-card {
             background-color: #fff;
             border: 1px solid #820340;
